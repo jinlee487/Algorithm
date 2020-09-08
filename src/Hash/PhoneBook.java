@@ -4,7 +4,9 @@ public class PhoneBook {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[] phone_book = {"119","97674223","1195524421"};
+		String[] phone_book = {"111113" + 
+				"1112" + 
+				"12"};
 		System.out.println(solution(phone_book));
 	}
     public static boolean solution(String[] phone_book) {
