@@ -15,7 +15,6 @@ public class PhoneBook {
         	for(int j=i+1;j<phone_book.length;j++) {
         		if(phone_book[i].startsWith(phone_book[j])) return false;
         		if(phone_book[j].startsWith(phone_book[i])) return false;
-
         	}
         }
         return answer;
