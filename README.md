@@ -31,7 +31,7 @@
 # ALGORITHM WEBSITE
 
 - `BAEKJOON` : `https://www.acmicpc.net/user/jwl2327`
-- `PROGRAMMERZ` : `https://programmers.co.kr/learn/challenges`
+- `PROGRAMMERS` : `https://programmers.co.kr/learn/challenges`
 - `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
  
 <br />
