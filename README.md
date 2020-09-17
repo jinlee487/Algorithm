@@ -28,7 +28,7 @@
 
 
 
-# ALGORITHM WEBSITE
+# ALGORITHM WEBSITES
 
 - `BAEKJOON` : `https://www.acmicpc.net/user/jwl2327`
 - `PROGRAMMERS` : `https://programmers.co.kr/learn/challenges`
