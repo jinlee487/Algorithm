@@ -5,9 +5,7 @@
  
  
  <br />
- <br />
- <br />
- 
+
  
 # 개요
 - [PURPOSE](#PURPOSE)
@@ -15,8 +13,7 @@
 - [BAEKJOON 단계별](#BAEKJOON-단계별)
 
 <br />
-<br />
-<br />
+
 
 # PURPOSE
 
@@ -28,8 +25,7 @@
 - Ace the Kakao coding exams
 
 <br />
-<br />
-<br />
+
 
 
 # ALGORITHM WEBSITE
@@ -39,8 +35,7 @@
 - `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
  
 <br />
-<br />
-<br />
+
 
 
 # BAEKJOON 단계별
@@ -70,8 +65,7 @@
 - DFS와 BFS	그래프를 순회하는 알고리즘을 배워 봅시다.		
 
 <br />
-<br />
-<br />
+
 
 # 개발 언어
 
