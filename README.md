@@ -3,20 +3,26 @@
  <p align="right">PERSONAL PRACTICE PROBLEMS</p>
 </p>
  
+ 
+ 
+ 
+ 
 # 개요
 - [PURPOSE](#PURPOSE)
 - [ALGORITHM WEBSITE](#ALGORITHM-WEBSITE)
 - [BAEKJOON 단계별](#BAEKJOON-단계별)
 
 
+
 # PURPOSE
 
-## Personal Improvement
+### Personal Improvement
 - Learn all of the different algorithm theorems 
 
-## Achieve My Goal
+### Achieve My Goal
 - Solve 300 algorithm problems ~ so far half way there~! 
 - Ace the Kakao coding exams
+
 
 
 # ALGORITHM WEBSITE
@@ -25,6 +31,8 @@
 - `PROGRAMMERZ` : `https://programmers.co.kr/learn/challenges`
 - `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
  
+
+
 
 # BAEKJOON 단계별
 
@@ -52,9 +60,13 @@
 - 동적 계획법 2	조금 더 어려운 동적 계획법 문제를 풀어 봅시다.		
 - DFS와 BFS	그래프를 순회하는 알고리즘을 배워 봅시다.		
 
+
+
 # 개발 언어
 
 - `JAVA`
+
+
 
 
 ## Thanks You! 
