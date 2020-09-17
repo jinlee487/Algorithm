@@ -1,5 +1,7 @@
 package KakaoTalk_2020_first;
 
+import java.util.Arrays;
+
 public class Key_and_Lock {
 
 	public static void main(String[] args) {
@@ -17,32 +19,32 @@ public class Key_and_Lock {
 		for(int i=0;i<keylen;i++) {
 			keymap[i] = key[i].clone();
 		}
-//		for(int[] x:lock) {
-//			System.out.println(Arrays.toString(x));
-//		}
+		for(int[] x:lock) {
+			System.out.println(Arrays.toString(x));
+		}
 		int[][] lockmap = new int[2*(keylen-1)+locklen][2*(keylen-1)+locklen];
 		for(int i=0;i<locklen;i++) {
 			for (int j=0;j<locklen;j++) {
 				lockmap[i+keylen-1][j+keylen-1] = lock[i][j];
 			}
 		}
-//		System.out.println("this is the lockmap");
-//		for(int[] x:lockmap) {
-//			System.out.println(Arrays.toString(x));
-//		}
+		System.out.println("this is the lockmap");
+		for(int[] x:lockmap) {
+			System.out.println(Arrays.toString(x));
+		}
 
 		int[][] testmap = new int[2*(keylen-1)+locklen][2*(keylen-1)+locklen];
 
 		for(int c=0;c<4;c++) { //rotation
-//			System.out.println("this is the keymap");
-//			for(int[] x:keymap) {
-//				System.out.println(Arrays.toString(x));
-//			}
+			System.out.println("this is the keymap");
+			for(int[] x:keymap) {
+				System.out.println(Arrays.toString(x));
+			}
 			
 			for(int i=0;i<locklen+(keylen-1);i++) { // col picking starting points
 				next:
 				for(int j=0;j<locklen+(keylen-1);j++) { //row 
-//					System.out.printf("\nstarting => [%d,%d]",i,j);
+					System.out.printf("\nstarting => [%d,%d]",i,j);
 					for(int copy=0;copy<lockmap.length;copy++) { //reinitializing testmap
 						testmap[copy] = lockmap[copy].clone();
 					}
@@ -52,13 +54,13 @@ public class Key_and_Lock {
 						for(int kk=0;kk<keylen;kk++) { //row
 							temp=lockmap[i+k][j+kk]+key[k][kk]; 
 							testmap[i+k][j+kk] = temp;
-//							System.out.printf("\n[%d+%d][%d+%d]=> %d\n",i,k,j,kk,temp);
+							System.out.printf("\n[%d+%d][%d+%d]=> %d\n",i,k,j,kk,temp);
 						}
 					}
-//					System.out.println("this is the test map");
-//					for(int[] x:testmap) {
-//						System.out.println(Arrays.toString(x));
-//					}
+					System.out.println("this is the test map");
+					for(int[] x:testmap) {
+						System.out.println(Arrays.toString(x));
+					}
 					
 					for(int a=keylen-1;a<keylen-1+locklen;a++) {
 						for(int b=keylen-1;b<keylen-1+locklen;b++) {
