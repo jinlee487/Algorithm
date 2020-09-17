@@ -4,7 +4,9 @@
 </p>
  
  
- 
+ <br />
+ <br />
+ <br />
  
  
 # 개요
@@ -12,7 +14,9 @@
 - [ALGORITHM WEBSITE](#ALGORITHM-WEBSITE)
 - [BAEKJOON 단계별](#BAEKJOON-단계별)
 
-
+<br />
+<br />
+<br />
 
 # PURPOSE
 
@@ -23,6 +27,9 @@
 - Solve 300 algorithm problems ~ so far half way there~! 
 - Ace the Kakao coding exams
 
+<br />
+<br />
+<br />
 
 
 # ALGORITHM WEBSITE
@@ -31,7 +38,9 @@
 - `PROGRAMMERZ` : `https://programmers.co.kr/learn/challenges`
 - `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
  
-
+<br />
+<br />
+<br />
 
 
 # BAEKJOON 단계별
@@ -60,7 +69,9 @@
 - 동적 계획법 2	조금 더 어려운 동적 계획법 문제를 풀어 봅시다.		
 - DFS와 BFS	그래프를 순회하는 알고리즘을 배워 봅시다.		
 
-
+<br />
+<br />
+<br />
 
 # 개발 언어
 
