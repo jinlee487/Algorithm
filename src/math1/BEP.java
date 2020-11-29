@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 /*
  * Solved
- * https://www.acmicpc.net/problem/11050
- * 이항계수1
- * https://oper6210.tistory.com/76
+ * https://www.acmicpc.net/problem/1712
+ * 손익분기점
+ * 
  */
 public class BEP {
 
