@@ -1,4 +1,4 @@
-package step_by_step;
+package forloop;
 
 import java.util.Scanner;
 
