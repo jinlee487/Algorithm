@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class H_index {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] citations = {10, 8, 5, 3,  3 };
 		System.out.println(solution(citations));
 
@@ -13,7 +12,7 @@ public class H_index {
 
     public static int solution(int[] citations) {
         int answer = 0;
-        int length = citations.length;
+        // int length = citations.length;
         int h = 0;
         int k = 0;
         Arrays.sort(citations);
