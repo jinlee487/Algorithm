@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /*
- * solved!!
+ * 
  * 
  * https://www.acmicpc.net/problem/9012
  * 오큰수
