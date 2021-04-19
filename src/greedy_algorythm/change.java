@@ -3,7 +3,12 @@ package greedy_algorythm;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/*
+ * SOLVED!!
+ * https://www.acmicpc.net/problem/5585
+ * 거스름돈
+ * 
+*/
 public class change {
        
 	public static void main(String[] args) throws IOException	{
