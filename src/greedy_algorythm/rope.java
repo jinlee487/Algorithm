@@ -5,7 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
-
+/*
+ * SOLVED!!
+ * https://www.acmicpc.net/problem/2217 
+ * 로프
+ * 
+*/
 public class rope {
     public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
