@@ -13,6 +13,7 @@ import java.util.*;
  *  하나에 영구적으로 도킹하려 한다. 
  *  비행기가 어느 게이트에도 도킹할 수 없다면 공항이 폐쇄되고, 
  *  이후 어떤 비행기도 도착할 수 없다.
+ *  union find problem!
  *  https://steady-coding.tistory.com/114
  * 
 */
