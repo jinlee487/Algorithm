@@ -24,6 +24,7 @@ public class SecretMap {
         String bn = "";
         for(int i=0;i<n;i++){
             // sum = arr1[i] + arr2[i];
+            // java 비트연산
             bn = Integer.toBinaryString(arr1[i] | arr2[i]); 
             // System.out.println("this is bn => " +  bn);
             // System.out.println("this is n => "  + n);
