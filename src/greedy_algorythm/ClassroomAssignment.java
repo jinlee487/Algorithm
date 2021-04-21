@@ -7,7 +7,7 @@ import java.util.*;
  * SOLVED!!
  * https://www.acmicpc.net/problem/11000
  * 강의실 배정
- * 
+ * https://velog.io/@jkh9615/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-11000-%EA%B0%95%EC%9D%98%EC%8B%A4-%EB%B0%B0%EC%A0%95-Java
 */
 public class ClassroomAssignment {
 	public static void main(String[] args) throws IOException{
