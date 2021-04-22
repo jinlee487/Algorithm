@@ -57,7 +57,7 @@ public class MenuRenual {
                 }
             }
         );
-        //now we change the hashmap to a orderable entry list
+        //now we change the hashmap to an orderable entry list
         //System.out.println("this is the sorted entry set => " );
         //System.out.println(entries);
         int[] courses = new int[11];
