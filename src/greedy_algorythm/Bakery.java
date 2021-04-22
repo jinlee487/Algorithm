@@ -11,7 +11,7 @@ import java.io.*;
  * 
 */
 public class Bakery { 
-    static String[][] path;
+    static char[][] path;
     static int R,C,ans;
 
     public static void main(String[] args) throws IOException{ 
@@ -20,10 +20,10 @@ public class Bakery {
         String[] temp = br.readLine().split(" ");
         R = Integer.parseInt(temp[0]);
         C = Integer.parseInt(temp[1]);
-        path = new String[R][C];
+        path = new char[R][C];
 
         for(int i=0;i<R;i++){
-            path[i] = br.readLine().split(""); 
+            path[i] = br.readLine().toCharArray(); 
         }
         // System.out.println("\n this is input => ");
         // for(int i=0;i<path.length;i++){
@@ -33,9 +33,9 @@ public class Bakery {
         //to record the coordinates of each path.
         //when the pipes reach the destination, we can move the completed path to the clist
         for(int i=0;i<R;i++){
-            path[0][0]="x";
+            path[0][0]='x';
             dfs(i,0);
-            path[0][0]=".";
+            path[0][0]='.';
         }
         // System.out.println("this is the final path => ");
         // for(int i=0;i<path.length;i++){
@@ -54,26 +54,26 @@ public class Bakery {
             ans++;
             return true;
         }
-        if(0<=x-1&&!path[x-1][y+1].equals("x")){
+        if(0<=x-1&&path[x-1][y+1]!='x'){
             //upper horizontal
             // System.out.println("next loop x-1 and y+1");
-            path[x-1][y+1]="x";
+            path[x-1][y+1]='x';
             if(dfs(x-1,y+1)) return true;
-            path[x-1][y+1]=".";
+            // path[x-1][y+1]=".";
         }
-        if(!path[x][y+1].equals("x")){
+        if(path[x][y+1]!='x'){
             //straight
             // System.out.println("next loop x and y+1");
-            path[x][y+1]="x";
+            path[x][y+1]='x';
             if(dfs(x,y+1)) return true;
-            path[x][y+1]=".";
+            // path[x][y+1]=".";
         }        
-        if(x+1<R&&!path[x+1][y+1].equals("x")){
+        if(x+1<R&&path[x+1][y+1]!='x'){
             //downward horizontal
             // System.out.println("next loop x+1 and y+1");
-            path[x+1][y+1]="x";
+            path[x+1][y+1]='x';
             if(dfs(x+1,y+1)) return true;
-            path[x+1][y+1]=".";
+            // path[x+1][y+1]=".";
         }
         return false;
     }
