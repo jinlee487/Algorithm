@@ -20,7 +20,7 @@ public class SearchRanking {
 		// TODO Auto-generated method stub
         String[] info = {"java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"};
         String[] query = {"java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"};
-		//System.out.println(Arrays.toString(solution(info,query)));
+		System.out.println(Arrays.toString(solution(info,query)));
 	}
     public static int[] solution(String[] info, String[] query) {
         data = new HashMap<String,int[]>();
@@ -66,16 +66,6 @@ public class SearchRanking {
             score = Integer.parseInt(applicant[4]);
             applicant = Arrays.copyOf(applicant, applicant.length-1);
             temp = Arrays.copyOf(applicant,applicant.length);
-            key = String.join(" ", applicant);
-            if(!data.containsKey(key)){
-                //System.out.println("found an applicant resume not in data key! => " + key);
-            }
-           
-            scoreBoard = data.get(key);
-            scoreBoard[score]  = scoreBoard[score] + 1;
-            //System.out.println("this is the added key => " + key);
-            //System.out.println("added score on => scoreBoard[score] + score " + scoreBoard[score] +" " + score);
-            data.put(key,scoreBoard);
 
             for(int j=0;j<2;j++){
                 if(j==0) temp[0] = applicant[0];
@@ -89,9 +79,6 @@ public class SearchRanking {
                         for(int m=0;m<2;m++){
                             if(m==0) temp[3] = applicant[3];
                             else temp[3] = "-";
-                            if(Arrays.equals(temp, applicant)){
-                                continue;
-                            }
                             key = String.join(" ", temp);
                             if(!data.containsKey(key)){
                                 //System.out.println("found an applicant resume not in data key! => " + key);
