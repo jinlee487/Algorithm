@@ -6,7 +6,7 @@ import java.util.*;
  * https://programmers.co.kr/learn/courses/30/lessons/72412
  * 순위 검색
  * 해답=> https://girawhale.tistory.com/94
- * 비트연산
+ * 비트연산 => dfs나 루핑으로 바꿔도 됨 어짜피 128개 밖에 안됨
  * & 
  * 이분탐색
  * 문제
@@ -24,7 +24,6 @@ public class SearchRankingSolution {
         for (String in : info) {
             String[] split = in.split(" ");
             int score = Integer.parseInt(split[4]);
-
             for (int i = 0; i < (1 << 4); i++) {
                 StringBuilder key = new StringBuilder();
                 for (int j = 0; j < 4; j++) {
@@ -33,11 +32,13 @@ public class SearchRankingSolution {
                 infos.computeIfAbsent(key.toString(), s -> new ArrayList<>()).add(score);
             }
         }
+        System.out.println("this is infos => " + infos);
 
         List<Integer> empty = new ArrayList<>();
-        for (Map.Entry<String, List<Integer>> entry : infos.entrySet())
+        for (Map.Entry<String, List<Integer>> entry : infos.entrySet()){
             entry.getValue().sort(null);
-
+        }
+        System.err.println("this is sorted infos => " + infos);
         int[] answer = new int[query.length];
         for (int i = 0; i < query.length; i++) {
             String[] split = query[i].replaceAll("-", "").split(" and | ");
@@ -47,14 +48,24 @@ public class SearchRankingSolution {
             List<Integer> list = infos.getOrDefault(key, empty);
 
             int s = 0, e = list.size();
-
+            // 이분탐색!
             while (s < e) {
                 int mid = (s + e) / 2;
-
-                if (list.get(mid) < score) s = mid + 1;
-                else e = mid;
+                System.out.println("s => " + s);
+                System.out.println("e => " + e);
+                System.out.println("mid => " + mid);
+                if (list.get(mid) < score) {
+                    s = mid + 1;
+                    System.out.println("list.get(mid) < score => true");
+                    System.out.println("s = mid + 1 => " + s);
+                }
+                else {                    
+                    e = mid;
+                    System.out.println("=> false");
+                    System.out.println("e = mid => " + e);
+                }
             }
-
+            System.out.println("this is the answer[" +i+ "] =>" + (list.size() - s));
             answer[i] = list.size() - s;
         }
 
