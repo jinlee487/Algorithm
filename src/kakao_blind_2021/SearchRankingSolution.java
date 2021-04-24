@@ -24,11 +24,21 @@ public class SearchRankingSolution {
         for (String in : info) {
             String[] split = in.split(" ");
             int score = Integer.parseInt(split[4]);
+            System.out.println("this is bit loop");
+            System.out.println("this is 1 << 4 => " + (1 << 4));
             for (int i = 0; i < (1 << 4); i++) {
+                System.out.println("this is i => " + i);
                 StringBuilder key = new StringBuilder();
                 for (int j = 0; j < 4; j++) {
-                    if ((i & (1 << j)) > 0) key.append(split[j]);
+                    System.out.println("this is j => " + j + " and (1 << j) => " + (1 << j));
+                    System.out.println("ths is split[j] => " + split[j]);
+                    System.out.println("this is (i & (1 << j)) => " + (i & (1 << j)));
+                    if ((i & (1 << j)) > 0) {
+                        key.append(split[j]);
+                        System.out.println("(i & (1 << j)) > 0 => true appending to key => " + key.toString());
+                    }
                 }
+                System.out.println("adding key to infos => " + key.toString());
                 infos.computeIfAbsent(key.toString(), s -> new ArrayList<>()).add(score);
             }
         }
