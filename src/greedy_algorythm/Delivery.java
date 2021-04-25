@@ -6,6 +6,7 @@ import java.util.*;
  * SOLVED!!
  * https://www.acmicpc.net/problem/8980
  * 택배
+ * 해설 => https://steady-coding.tistory.com/58
 */
 
 class Info implements Comparable<Info> {
