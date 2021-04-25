@@ -58,7 +58,7 @@ public class Ship {
         int ans = 0;
         for(;!pqbox.isEmpty();){
             b = pqbox.poll();
-            while(!pqcrane.isEmpty()){
+            for(;!pqcrane.isEmpty();){
                 c=pqcrane.poll();
                 if(b<=c.weight){
                     //if crane's weight is more than the box, we can use the crane
