@@ -1,5 +1,6 @@
 <p align="center">
  <h2 align="center">ALGORITHM</h2>
+ <h2 align="center">알고리즘</h2>
  <p align="right">PERSONAL PRACTICE PROBLEMS</p>
 </p>
  
