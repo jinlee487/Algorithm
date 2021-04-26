@@ -21,8 +21,7 @@
 - Learn all of the different algorithm theorems 
 
 ### Achieve My Goal
-- Solve 300 algorithm problems ~ so far half way there~! 
-- Ace the Kakao coding exams
+-Ace coding exams
 
 <br />
 
