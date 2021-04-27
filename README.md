@@ -1,6 +1,5 @@
 <p align="center">
- <h2 align="center">ALGORITHM</h2>
- <h2 align="center">알고리즘</h2>
+ <h2 align="center">ALGORITHM 알고리즘</h2>
  <p align="right">PERSONAL PRACTICE PROBLEMS</p>
 </p>
  
@@ -12,6 +11,7 @@
 - [PURPOSE](#PURPOSE)
 - [ALGORITHM WEBSITES](#ALGORITHM-WEBSITES)
 - [BAEKJOON 단계별](#BAEKJOON-단계별)
+- [CODEFORCE 코드포스](#CODEFORCE 코드포스)
 
 <br />
 
@@ -31,6 +31,7 @@
 # ALGORITHM WEBSITES
 
 - `BAEKJOON` : `https://www.acmicpc.net/user/jwl2327`
+- `CODEFORCE` : `https://codeforces.com/profile/jwl2327`
 - `PROGRAMMERS` : `https://programmers.co.kr/learn/challenges`
 - `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
  
