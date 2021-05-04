@@ -30,10 +30,10 @@
 
 # ALGORITHM WEBSITES
 
-- `BAEKJOON` : `https://www.acmicpc.net/user/jwl2327`
-- `CODEFORCE` : `https://codeforces.com/profile/jwl2327`
-- `PROGRAMMERS` : `https://programmers.co.kr/learn/challenges`
-- `GEEKSFORGEEKS` : `https://www.geeksforgeeks.org/fundamentals-of-algorithms/`  
+- `BAEKJOON` : [acmicpc.net/user/jwl2327]( https://www.acmicpc.net/user/jwl2327)
+- `CODEFORCE` : [codeforces.com/profile/jwl2327](https://codeforces.com/profile/jwl2327)
+- `PROGRAMMERS` : [programmers.co.kr/learn/challenges](https://programmers.co.kr/learn/challenges)
+- `GEEKSFORGEEKS` : [geeksforgeeks.org/fundamentals-of-algorithms/](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
  
 <br />
 
