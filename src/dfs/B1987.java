@@ -14,6 +14,7 @@ import java.io.*;
  * excect path that we took
  * 
  * my first attempt didnt work because working the keys took too much time.
+ * must remember to minimize time how ever possible
  */
 public class B1987 {
 
