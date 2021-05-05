@@ -8,6 +8,7 @@ https://www.acmicpc.net/problem/2644
 촌수 계산
 This question is asking for the shortest path between a and b 
 normally I use a hashmap, but for the purpose of learning I will only use an array
+this is possible because (1≤n≤100)
 */
 public class B2644 {
     static int n, m, a, b, count, ans=Integer.MAX_VALUE;
