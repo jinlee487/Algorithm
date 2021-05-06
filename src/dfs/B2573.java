@@ -2,6 +2,7 @@ package dfs;
 import java.io.*;
 import java.util.*;
 /* 
+Solved!
 https://www.acmicpc.net/problem/2573
 빙산
 칸에 있는 높이는 일년마다 그 칸에 동서남북 
