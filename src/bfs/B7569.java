@@ -4,8 +4,8 @@ import java.util.*;
 
 /* 
 Solved!
-https://www.acmicpc.net/problem/7576
-토마토
+https://www.acmicpc.net/problem/7569
+토마토2
 this question is similar to problem 7576 토마토1
 this is a continuation of the previous problem 토마토1
 */
