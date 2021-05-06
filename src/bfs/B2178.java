@@ -22,12 +22,11 @@ class V{
         return "x: " + x + " y: "  + y;
     }
 }
-public class B2178 {
+public class B1697 {
      
-    static int[] dr = {1,-1,0,0};
-    static int[] dc = {0,0,-1,1};
+    static int[] arrx = {1,-1,0,0}, arry = {0,0,-1,1};
     static boolean[][] visit;
-    static int[][] map;
+    static int[][] arr;
     static int N,M;
 
     public static void main(String args[]) throws IOException {
@@ -36,16 +35,16 @@ public class B2178 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        map = new int[N][M];
+        arr = new int[N][M];
         visit = new boolean[N][M];
         for (int i = 0; i < N; i++) {
             String line = br.readLine();
             for (int j = 0; j < M; j++) {
-                map[i][j] = line.charAt(j) - '0';
+                arr[i][j] = line.charAt(j) - '0';
             }
         }
         bfs(0,0);
-        bw.write(Integer.toString(map[N-1][M-1]));
+        bw.write(Integer.toString(arr[N-1][M-1]));
         bw.flush();
         bw.close();
         br.close();
@@ -61,12 +60,12 @@ public class B2178 {
             // System.out.println("this is v => " + v);
             visit[x][y] = true;
             for(int dir = 0; dir<4; dir++){
-                int nx = v.x + dr[dir];
-                int ny = v.y + dc[dir];
+                int nx = v.x + arrx[dir];
+                int ny = v.y + arry[dir];
                 if(check(nx,ny)){
                     q.add(new V(nx,ny));
                     visit[nx][ny] = true;
-                    map[nx][ny] = map[v.x][v.y] + 1;
+                    arr[nx][ny] = arr[v.x][v.y] + 1;
                 }
             }
         }
@@ -75,7 +74,7 @@ public class B2178 {
         if(x<0||y<0||N<=x||M<=y){
             return false;
         }
-        if(map[x][y]==0){
+        if(arr[x][y]==0){
             return false;
         }
         if(visit[x][y]){
