@@ -8,76 +8,62 @@ Solved!
 https://www.acmicpc.net/problem/1697
 숨바꼭질
 BFS + DP 문제
+BFS는 Queue로 구현하고
+DFS는 재귀로 구현한다
 */
-class V{
-    int x;
-    int y;
-    V(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-    @Override
-    public String toString(){
-        return "x: " + x + " y: "  + y;
-    }
-}
+
 public class B1697 {
      
-    static int[] dr = {1,-1,0,0};
-    static int[] dc = {0,0,-1,1};
-    static boolean[][] visit;
-    static int[][] map;
-    static int N,M;
+    static int[] arrx = {1,-1};
+    static int[] arr, dp;
+    static int N,K;
 
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
-        map = new int[N][M];
-        visit = new boolean[N][M];
-        for (int i = 0; i < N; i++) {
-            String line = br.readLine();
-            for (int j = 0; j < M; j++) {
-                map[i][j] = line.charAt(j) - '0';
-            }
-        }
-        bfs(0,0);
-        bw.write(Integer.toString(map[N-1][M-1]));
+        K = Integer.parseInt(st.nextToken());
+        arr = new int[100001];
+        dp = new int[100001];
+        bfs(N);
+        bw.write(Integer.toString(dp[K]-1));
         bw.flush();
         bw.close();
         br.close();
     }
 
-    public static void bfs(int x, int y){
-        // System.out.println("\nthis is new bfs => x: " + x + " y: " + y);
-        Queue<V> q = new LinkedList<V>();
-        q.add(new V(x,y));
+    public static void bfs(int x){
+        dp[x] = 1;
+        // System.out.println("\nthis is new bfs => x: " + x );
+        Queue<Integer> q = new LinkedList<Integer>();
+        q.add(x);
+        int nx, cx;
         while(!q.isEmpty()){
             // System.out.println("this is current q => " + q);
-            V v = q.poll();
-            // System.out.println("this is v => " + v);
-            visit[x][y] = true;
-            for(int dir = 0; dir<4; dir++){
-                int nx = v.x + dr[dir];
-                int ny = v.y + dc[dir];
-                if(check(nx,ny)){
-                    q.add(new V(nx,ny));
-                    visit[nx][ny] = true;
-                    map[nx][ny] = map[v.x][v.y] + 1;
+            cx = q.poll();
+            // System.out.println("this is cx => " + cx);
+            for(int i = 0; i<3; i++){
+                if(i==2){
+                    nx = cx*2;
+                } else {
+                    nx = cx + arrx[i];
+                }
+                if(check(nx)){
+                    q.add(nx);
+                    dp[nx] = dp[cx] + 1;
+                    if(nx == K){
+                        return;
+                    }
                 }
             }
         }
     }
-    public static boolean check(int x, int y){
-        if(x<0||y<0||N<=x||M<=y){
+    public static boolean check(int x){
+        if(x<0||100001<=x){
             return false;
         }
-        if(map[x][y]==0){
-            return false;
-        }
-        if(visit[x][y]){
+        if(dp[x]!=0){
             return false;
         }
         return true;
