@@ -22,7 +22,7 @@ class V{
         return "x: " + x + " y: "  + y;
     }
 }
-public class B1697 {
+public class B2178 {
      
     static int[] arrx = {1,-1,0,0}, arry = {0,0,-1,1};
     static boolean[][] visit;
