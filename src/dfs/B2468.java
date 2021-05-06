@@ -2,6 +2,7 @@ package dfs;
 import java.io.*;
 import java.util.*;
 /*
+Solved!
 https://www.acmicpc.net/problem/2468
 안전영역
 for this problem we have to find the maximum number of islands 
