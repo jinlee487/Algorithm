@@ -1,6 +1,7 @@
 package kakao_Blind_2019;
 import java.util.*;
 /* 
+Solved!
 https://programmers.co.kr/learn/courses/30/lessons/42888
 오픈채팅방
 this problem is a simple array + hashmap problem.
