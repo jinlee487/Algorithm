@@ -2,7 +2,8 @@ package kakao_Blind_2018;
 
 import java.util.*;
 
-/* 
+/*
+Solved! 
 https://programmers.co.kr/learn/courses/30/lessons/17677
 뉴스 클러스터링
 
