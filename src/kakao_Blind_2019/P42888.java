@@ -1,5 +1,4 @@
 package kakao_Blind_2019;
-import java.io.*;
 import java.util.*;
 /* 
 https://programmers.co.kr/learn/courses/30/lessons/42888
