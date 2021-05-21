@@ -37,8 +37,7 @@ public class B19941 {
             }
         });
         HP hp;
-        int count = 0 ;
-        for(int i=0;i<arr.length;i++){
+        for(int i=0, count=0;i<arr.length;i++){
             hp = new HP(i,arr[i]);
             if(hp.obj == 'H'){
                 hamburger.add(hp);
