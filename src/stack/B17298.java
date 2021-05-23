@@ -13,28 +13,28 @@ class B17298 {
         int N = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
         Stack<Integer> stack = new Stack<Integer>();
-        Stack<Integer> NGE = new Stack<Integer>();
+        Stack<Integer> nge = new Stack<Integer>();
         for(int i=0;i<N;i++){
             stack.add(Integer.parseInt(st.nextToken()));
         }
         int[] arr = new int[stack.size()];
-        NGE.add(stack.pop());
+        nge.add(stack.pop());
         arr[0] = -1;
         int current;
         for(int i=1;i<arr.length;i++){
             current = stack.pop();
-            for(;!NGE.isEmpty();){
-                if(current < NGE.peek()){
-                    arr[i] = NGE.peek();
+            for(;!nge.isEmpty();){
+                if(current < nge.peek()){
+                    arr[i] = nge.peek();
                     break;
                 } else {
-                    NGE.pop();
+                    nge.pop();
                 }
             }
-            if(NGE.isEmpty()){
+            if(nge.isEmpty()){
                 arr[i] = -1;
             }
-            NGE.add(current);
+            nge.add(current);
         }
         StringBuilder str = new StringBuilder();
         for(int i=arr.length-1;-1<i;i--){
