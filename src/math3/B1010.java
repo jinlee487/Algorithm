@@ -9,16 +9,11 @@ dynamic programming memoization combination
 문제 해설: https://st-lab.tistory.com/194
 */
 class B1010 {
-	
 	static int[][] dp = new int[30][30];
- 
-	public static void main(String[] args) throws IOException {
-		
+	public static void main(String[] args) throws IOException {	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
 		int T = Integer.parseInt(br.readLine());
-		
 		StringTokenizer st;
 		int N, M;
 		StringBuilder sb = new StringBuilder();
