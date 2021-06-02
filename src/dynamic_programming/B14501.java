@@ -25,7 +25,7 @@ class B14501 {
 		int ans = 0;
         arr = new int[N+1]; 
         Arrays.fill(arr,-1);
-		for (int i = 1; i < N; i++) {
+		for (int i = 1; i <= N; i++) {
 			ans = Math.max(ans, dp(i));
 		}
         bw.write(Integer.toString(ans));
