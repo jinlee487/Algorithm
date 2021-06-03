@@ -8,12 +8,11 @@ https://www.acmicpc.net/problem/9465
 dynamic programming memoization
 */
 class B9465 {
-    static int[][] arr, dp;
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int T = Integer.parseInt(br.readLine());
-        int N;
+        int T = Integer.parseInt(br.readLine()), N;
+        int[][] arr, dp;
         StringTokenizer st;
         StringBuilder str = new StringBuilder();
         for(int i=0;i<T;i++){
