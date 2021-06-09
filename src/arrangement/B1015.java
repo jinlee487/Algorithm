@@ -7,6 +7,7 @@ Solved!
 https://www.acmicpc.net/problem/1015
 수열 정렬
 */
+
 class Number {
     int n;
     int idx;
