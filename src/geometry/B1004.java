@@ -7,21 +7,8 @@ https://www.acmicpc.net/problem/1004
 어린왕자
 기하학 
 */
-class Planet{
-    int x;
-    int y;
-    int radius;
-
-    public Planet(int x, int y, int radius) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-    }
-}
 public class B1004 {
-
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int T = Integer.parseInt(br.readLine());
@@ -37,8 +24,6 @@ public class B1004 {
             int endY = Integer.parseInt(st.nextToken());
 
             int n = Integer.parseInt(br.readLine());
-
-            Planet arr[] = new Planet[n];
 
             // 행성 정보 초기화
             for (int i = 0; i < n; i++) {
