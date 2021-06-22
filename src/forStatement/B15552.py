@@ -1,0 +1,9 @@
+# https://www.acmicpc.net/problem/15552
+# 빠른 A+B
+
+import sys
+ 
+inp = int(input())
+for i in range(inp):
+    a,b = map(int, sys.stdin.readline().split())
+    print(a+b)
