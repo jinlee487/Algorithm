@@ -3,29 +3,37 @@
 # Solved
 import sys
 
-T = int(sys.stdin.readline())
 
-def B17609(str):
-    left_false = False
-    right_false = False
-    for i in range(len(str)//2):
-        if str[i] != str[len(str)-1-i]:
-            # 앞 글자 삭제후 비교
-            for j in range(i,len(str)//2):
-                if str[j+1] != str[len(str)-1-j]:
-                    left_false = True
+# 유사회문 판단 함수
+def pseudo(a, left, right):
+    while left < right:
+        if a[left] == a[right]:
+            left += 1
+            right -= 1
+        else:
+            return False
+    return True
 
-            # 뒤 글자 삭제후 비교
-            for j in range(i,len(str)//2):
-                if str[j] != str[len(str)-1-j -1]:
-                    right_false = True 
-            
-            if left_false and right_false:
-                return 2
-            elif left_false or right_false:
+# 회문 판단 함수
+def palindrome(a, left, right):
+    while left < right:
+        if a[left] == a[right]:
+            left += 1
+            right -= 1
+        else:
+            res1 = pseudo(a, left+1, right)
+            res2 = pseudo(a, left, right-1)
+            if res1 == True or res2 == True:
                 return 1
+            else:
+                return 2
     return 0
 
-for _ in range(T):
-    print(B17609(sys.stdin.readline().rstrip()))
+T = int(sys.stdin.readline())
+for i in range(T):
+    a = list(sys.stdin.readline().rstrip())
+    res = palindrome(a, 0, len(a)-1)
+    print(res)
+
+
 
