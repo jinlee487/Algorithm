@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/minimum-path-sum/
 # Minimum Path Sum
+# solved
 
 # import sys
 # class Solution(object):
