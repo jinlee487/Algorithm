@@ -75,6 +75,7 @@
 
 - `JAVA`
 - `Python`
+- `JavaScript`
 
 
 
