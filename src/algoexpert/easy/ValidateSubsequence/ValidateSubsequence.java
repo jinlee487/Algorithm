@@ -1,3 +1,5 @@
+package algoexpert.easy.ValidateSubsequence;
+
 import java.util.*;
 
 class Program {

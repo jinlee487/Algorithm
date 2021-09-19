@@ -1,3 +1,5 @@
+package algoexpert.easy.SortedSquaredArray;
+
 import java.util.*;
 
 class Program {
