@@ -4,6 +4,8 @@ If we want the smallest total speed, we can compare the two ascending arrays.
 
 if we want the biggest total speed, we can compare the ascending array with the descending array.
 
+ This will result in a O(nlog(n)) time because sorting takes nlog(n) time max. and O(1) since we are calling by the index therefore constant time.
+
 For Java, we have to take in to consideration of the following... 
 
 4. Sorting in Descending Order
