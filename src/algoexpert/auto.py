@@ -1,7 +1,9 @@
 import os
+import re
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 folderName = input("\ninput directory name:\n")
+folderName = re.sub('([a-zA-Z])', lambda x: x.groups()[0].upper(), folderName, 1)
 level = int(input("\ninput level\neasy: 1 \tmedium: 2 \thard: 3 \tvery hard: 4\n"))
 if level == 1: level = "easy"
 elif level == 2: level = "medium"
