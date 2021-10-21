@@ -1,6 +1,6 @@
 LevenshteinDistance
 
-![src\algoexpert\medium\LevenshteinDistance\capture.PNG](src\algoexpert\medium\LevenshteinDistance\capture.PNG)
+![image](/src/algoexpert/medium/LevenshteinDistance/capture.PNG)
 
 for this problem, we use a dp to solve for the minimum number of edits. 
 
