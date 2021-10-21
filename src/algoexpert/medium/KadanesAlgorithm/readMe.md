@@ -1,6 +1,6 @@
 KadanesAlgorithm
 
-![image](src\algoexpert\medium\KadanesAlgorithm\capture.PNG)
+![image](/src/algoexpert/medium/KadanesAlgorithm/capture.PNG)
 
 For this problem, we use dynamic programming to solve the problem. 
 

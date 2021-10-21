@@ -2,7 +2,7 @@ NumberOfWaysToTraverseGraph
 
 There are three ways to solve this problem.
 
-![image](src\algoexpert\medium\NumberOfWaysToTraverseGraph\image.PNG)
+![image](/src/algoexpert/medium/NumberOfWaysToTraverseGraph/image.PNG)
 
 The first method is a recursion process of finding the number of ways for the previous box. 
 
