@@ -9,6 +9,8 @@ we keep creating a left and right array until we reach an empty array.
 If we can traverse the entire array without any problem, then we know that the two arrays are equal bst.
 
 O(n^2) time | O(n^2) space
+
+
 Because we have to traverse the array every single time to look for the next left and right values, we traverse the array more than once per value. 
 
 Because we create a left and right array for each node, we create O(n^2) space of arrays
