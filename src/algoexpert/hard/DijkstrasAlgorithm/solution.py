@@ -4,8 +4,8 @@ def dijkstrasAlgorithm(start, edges):
 	dp[start] = 0
 	visited = set()
 	while len(visited) != len(edges):
-		vertex = -1;
-		currentDistance = float("inf");
+		vertex = -1
+		currentDistance = float("inf")
 		for i in range(len(dp)):
 			if i in visited: 
 				continue
