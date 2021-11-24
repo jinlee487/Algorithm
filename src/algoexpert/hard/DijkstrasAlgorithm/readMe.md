@@ -1,6 +1,7 @@
 Dijkstras Algorithm
 
 For this problem, we have to go through each node to find the minimum distance it would take to travel and save it into the dp array. 
+![alt text](image.PNG)
 
 The time complexity of this problem depends on how we find the next vertex in the edges we are given.
 
