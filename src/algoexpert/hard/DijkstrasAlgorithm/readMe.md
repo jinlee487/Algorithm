@@ -24,4 +24,4 @@ If we create an Item object with the vertex and distance, we can allow the list 
 We can update the vertex constant time using the HashMap.
 While we sort the list in log(n) time and pop the last object in constant time.
 
-This would give complexity of O((v+e) * log(v)) | O(v) space Where v is the number of vertices and e is the number of edges in the input graph. 
+This would give complexity of O((v+e) * log(v)) time | O(v) space Where v is the number of vertices and e is the number of edges in the input graph. 
