@@ -74,3 +74,4 @@ local.properties
 
 # End of https://www.gitignore.io/api/eclipse
 src/main/webapp/WEB-INF/spring/root-context.xml
+AlgoExpert_Certificate.pdf
