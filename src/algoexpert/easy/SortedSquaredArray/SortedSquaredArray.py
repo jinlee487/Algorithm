@@ -4,7 +4,7 @@ def sortedSquaredArray(array):
 	for num in array:
 		answer.append(num * num)
 	answer.sort()
-    return answer
+	return answer
 def sortedSquaredArray(array):
     # Write your code here.
 	answer = [0 for _ in array] 
